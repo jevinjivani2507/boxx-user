@@ -21,6 +21,7 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
   const linkProps = useLink({
     href: `${linkTarget}/nate`,
   })
+  const toast = useToastController()
 
   return (
     <YStack f={1} jc="center" ai="center" gap="$8" p="$4" bg="$background">
@@ -43,7 +44,7 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
 
       <YStack gap="$4">
         <H1 ta="center" col="$color12">
-          Welcome to Tamagui.
+          Welcome to Jevin.
         </H1>
         <Paragraph col="$color10" ta="center">
           Here's a basic starter to show navigating from one screen to another.
@@ -55,7 +56,18 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
         <Separator />
       </YStack>
 
-      <Button {...linkProps}>Link to user</Button>
+      <Button {...linkProps}>Toast Here</Button>
+
+      <Button
+        onPress={() => {
+          toast.show('Successfully saved!', {
+            message: "Don't worry, we've got your data.",
+            native: false,
+          })
+        }}
+      >
+        Show Toast (Native)
+      </Button>
 
       <SheetDemo />
     </YStack>
