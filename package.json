@@ -1,5 +1,5 @@
 {
-  "name": "starter-free",
+  "name": "boxx",
   "private": true,
   "workspaces": [
     "./apps/*",

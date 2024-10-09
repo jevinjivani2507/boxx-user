@@ -2,6 +2,10 @@ import {
   Anchor,
   Button,
   H1,
+  H2,
+  H3,
+  H4,
+  H5,
   Paragraph,
   Separator,
   Sheet,
@@ -10,6 +14,7 @@ import {
   SwitchRouterButton,
   XStack,
   YStack,
+  SizableText,
 } from '@my/ui'
 import { ChevronDown, ChevronUp, X } from '@tamagui/lucide-icons'
 import { useState } from 'react'
@@ -46,6 +51,24 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
         <H1 ta="center" col="$color12">
           Welcome to Jevin.
         </H1>
+        <H2>H2</H2>
+        <H3>H3</H3>
+        <H4>H4</H4>
+        <H5>H5</H5>
+        <XStack space alignItems="center">
+          <SizableText size="$1" fontWeight="800">
+            alt1
+          </SizableText>
+          <SizableText size="$2" fontWeight="800">
+            alt1
+          </SizableText>
+          <SizableText size="$3" fontWeight="800">
+            alt1
+          </SizableText>
+          <SizableText size="$4" fontWeight="800">
+            alt2
+          </SizableText>
+        </XStack>
         <Paragraph col="$color10" ta="center">
           Here's a basic starter to show navigating from one screen to another.
         </Paragraph>
@@ -56,7 +79,7 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
         <Separator />
       </YStack>
 
-      <Button {...linkProps}>Toast Here</Button>
+      <Button {...linkProps}>Navigation</Button>
 
       <Button
         onPress={() => {
@@ -66,7 +89,7 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
           })
         }}
       >
-        Show Toast (Native)
+        Show
       </Button>
 
       <SheetDemo />

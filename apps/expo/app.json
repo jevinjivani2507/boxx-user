@@ -15,7 +15,7 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": ["**/*", "../../packages/app/assets/fonts/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.Boxx.games"
@@ -33,6 +33,13 @@
     "plugins": ["expo-router", "expo-font"],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "fonts": [
+      "../../packages/app/assets/fonts/Gilroy-Bold.ttf",
+      "../../packages/app/assets/fonts/Gilroy-Light.ttf",
+      "../../packages/app/assets/fonts/Gilroy-Medium.ttf",
+      "../../packages/app/assets/fonts/Gilroy-Regular.ttf",
+      "../../packages/app/assets/fonts/Gilroy-SemiBold.ttf"
+    ]
   }
 }
