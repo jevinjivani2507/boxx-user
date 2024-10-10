@@ -13,10 +13,12 @@
   ],
   "scripts": {
     "build": "tamagui-build --skip-types",
-    "watch": "tamagui-build --skip-types --watch"
+    "watch": "tamagui-build --skip-types --watch",
+    "generate-themes": "tamagui generate-themes ./theme-builder.ts ./src/theme-output.ts"
   },
   "dependencies": {
     "@tamagui/animations-react-native": "^1.112.13",
+    "@tamagui/cli": "^1.114.1",
     "@tamagui/font-inter": "^1.112.13",
     "@tamagui/react-native-media-driver": "^1.112.13",
     "@tamagui/shorthands": "^1.112.13",

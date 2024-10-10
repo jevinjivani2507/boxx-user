@@ -15,7 +15,8 @@ export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'conf
   return (
     <TamaguiProvider
       config={config}
-      defaultTheme={colorScheme === 'dark' ? 'dark' : 'light'}
+      // defaultTheme={colorScheme === 'dark' ? 'dark' : 'light'}
+      defaultTheme={'light'}
       {...rest}
     >
       <ToastProvider swipeDirection="horizontal" duration={6000} native={isWeb ? [] : ['mobile']}>

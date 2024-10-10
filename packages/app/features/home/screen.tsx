@@ -79,9 +79,13 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
         <Separator />
       </YStack>
 
-      <Button {...linkProps}>Navigation</Button>
+      <Button theme="accent" fontWeight="$14" {...linkProps}>
+        Navigation
+      </Button>
 
       <Button
+        size="$6"
+        backgroundColor="$accentBackground"
         onPress={() => {
           toast.show('Successfully saved!', {
             message: "Don't worry, we've got your data.",

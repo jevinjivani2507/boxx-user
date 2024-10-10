@@ -1,8 +1,9 @@
 import { createTamagui, createFont } from 'tamagui'
 import { shorthands } from '@tamagui/shorthands'
-import { tokens, themes } from '@tamagui/config/v3'
+import { tokens } from '@tamagui/config/v3'
 import { config as fontConfig } from '@tamagui/config/v2'
 import { createMedia } from '@tamagui/react-native-media-driver'
+import * as themes from './theme-output'
 
 import { animations } from '@my/ui/src/animations'
 
